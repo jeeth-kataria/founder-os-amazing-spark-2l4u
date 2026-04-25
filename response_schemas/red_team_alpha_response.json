@@ -1,0 +1,61 @@
+{
+  "agent_name": "Red Team Alpha",
+  "agent_id": "69ec5ab863c949174ac79996",
+  "description": "Adversarial Analyst with Structural Focus that attacks the idea from structural and market angles with ranked kill shots",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "kill_shots_ranked": [
+      {
+        "rank": "number",
+        "cause": "string",
+        "estimated_timeline": "string"
+      }
+    ],
+    "product_challenges": [
+      "string"
+    ],
+    "market_challenges": [
+      "string"
+    ],
+    "economics_challenges": [
+      "string"
+    ],
+    "competitive_death_scenario": "string",
+    "founder_trap": "string"
+  },
+  "example_response": {
+    "kill_shots_ranked": [
+      {
+        "rank": 1,
+        "cause": "Incumbent launches competing feature with existing distribution",
+        "estimated_timeline": "Month 12"
+      },
+      {
+        "rank": 2,
+        "cause": "Market window closes as larger players consolidate",
+        "estimated_timeline": "Month 18"
+      },
+      {
+        "rank": 3,
+        "cause": "Regulatory changes eliminate the core value proposition",
+        "estimated_timeline": "Month 24"
+      }
+    ],
+    "product_challenges": [
+      "Integration complexity with legacy systems",
+      "Data pipeline reliability at scale"
+    ],
+    "market_challenges": [
+      "Enterprise buyers defaulting to incumbent vendors",
+      "Market education cost for novel category"
+    ],
+    "economics_challenges": [
+      "High infrastructure costs erode margins",
+      "Free tier cannibalization of paid conversion"
+    ],
+    "competitive_death_scenario": "AWS launches a managed version at 1/3 the price point",
+    "founder_trap": "Building for power users while ignoring the mass market adoption path"
+  }
+}

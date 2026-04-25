@@ -1,0 +1,192 @@
+{
+  "agent_name": "Deal Memo Writer",
+  "agent_id": "69ec5aef603f5bad913c0db7",
+  "description": "Central Orchestrator and Deal Arbitrator that coordinates all sub-agents and synthesizes the final deal memo with investment scorecard, comparable exits, investor recommendations, and tweet drafts",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "verdict": "string",
+    "one_line_thesis": "string",
+    "market_opportunity": "string",
+    "technical_assessment": "string",
+    "financial_viability": "string",
+    "consensus_risk_analysis": {
+      "high_confidence_risks": [
+        "string"
+      ],
+      "investigate_risks": [
+        "string"
+      ],
+      "alpha_kill_shots_ranked": [
+        {
+          "rank": "number",
+          "cause": "string",
+          "estimated_timeline": "string"
+        }
+      ],
+      "beta_kill_shots_ranked": [
+        {
+          "rank": "number",
+          "cause": "string",
+          "estimated_timeline": "string"
+        }
+      ],
+      "consensus_reached": "string"
+    },
+    "conditions_for_success": [
+      "string"
+    ],
+    "recommended_next_step": "string",
+    "scorecard": {
+      "market_opportunity": {
+        "score": "number",
+        "reasoning": "string"
+      },
+      "technical_defensibility": {
+        "score": "number",
+        "reasoning": "string"
+      },
+      "unit_economics_health": {
+        "score": "number",
+        "reasoning": "string"
+      },
+      "execution_risk": {
+        "score": "number",
+        "reasoning": "string"
+      },
+      "team_market_fit": {
+        "score": "number",
+        "reasoning": "string"
+      },
+      "overall_score": "number"
+    },
+    "comparable_exits": [
+      {
+        "company": "string",
+        "outcome": "string",
+        "year": "number",
+        "similarity": "string"
+      }
+    ],
+    "recommended_investors": [
+      {
+        "name": "string",
+        "fund": "string",
+        "thesis_match": "string",
+        "contact_url": "string"
+      }
+    ],
+    "tweet_draft": "string",
+    "tweet_pending_approval": "boolean"
+  },
+  "example_response": {
+    "verdict": "CONDITIONAL PASS",
+    "one_line_thesis": "AI-powered developer tools targeting the $50B DevOps market with strong technical moat but unproven go-to-market",
+    "market_opportunity": "Large and growing market with clear pain points",
+    "technical_assessment": "Strong technical differentiation with proprietary ML models",
+    "financial_viability": "Unit economics are promising but CAC needs validation",
+    "consensus_risk_analysis": {
+      "high_confidence_risks": [
+        "Enterprise sales cycle may exceed runway"
+      ],
+      "investigate_risks": [
+        "Open-source alternatives could commoditize the core product"
+      ],
+      "alpha_kill_shots_ranked": [
+        {
+          "rank": 1,
+          "cause": "GitHub Copilot expands into this exact feature set",
+          "estimated_timeline": "Month 12"
+        },
+        {
+          "rank": 2,
+          "cause": "Enterprise sales cycle exceeds runway",
+          "estimated_timeline": "Month 18"
+        },
+        {
+          "rank": 3,
+          "cause": "Key technical talent poached by FAANG",
+          "estimated_timeline": "Month 8"
+        }
+      ],
+      "beta_kill_shots_ranked": [
+        {
+          "rank": 1,
+          "cause": "Premature scaling before product-market fit",
+          "estimated_timeline": "Month 10"
+        },
+        {
+          "rank": 2,
+          "cause": "Founder burnout from trying to serve too many segments",
+          "estimated_timeline": "Month 14"
+        },
+        {
+          "rank": 3,
+          "cause": "Technical debt from rushing enterprise features",
+          "estimated_timeline": "Month 16"
+        }
+      ],
+      "consensus_reached": "Both teams agree enterprise sales cycle is the primary risk"
+    },
+    "conditions_for_success": [
+      "Close 3 design partners within 90 days",
+      "Achieve <$500 CAC through developer community channels",
+      "Ship v2 with enterprise SSO before Month 6"
+    ],
+    "recommended_next_step": "Schedule founder deep-dive on enterprise sales strategy",
+    "scorecard": {
+      "market_opportunity": {
+        "score": 8,
+        "reasoning": "Large TAM with clear underserved segment in mid-market"
+      },
+      "technical_defensibility": {
+        "score": 7,
+        "reasoning": "Proprietary ML models but risk of commoditization"
+      },
+      "unit_economics_health": {
+        "score": 6,
+        "reasoning": "Promising LTV:CAC but CAC unvalidated at scale"
+      },
+      "execution_risk": {
+        "score": 5,
+        "reasoning": "First-time founder with strong technical but weak GTM experience"
+      },
+      "team_market_fit": {
+        "score": 7,
+        "reasoning": "Deep domain expertise from years at target customer companies"
+      },
+      "overall_score": 6.6
+    },
+    "comparable_exits": [
+      {
+        "company": "Snyk",
+        "outcome": "Raised $530M Series G at $8.5B valuation",
+        "year": 2022,
+        "similarity": "Developer-first security tool with similar PLG motion"
+      },
+      {
+        "company": "LaunchDarkly",
+        "outcome": "Raised $200M Series D",
+        "year": 2021,
+        "similarity": "Developer infrastructure tool with enterprise expansion playbook"
+      },
+      {
+        "company": "Sourcegraph",
+        "outcome": "Raised $125M Series D at $2.6B valuation",
+        "year": 2021,
+        "similarity": "Code intelligence platform targeting same buyer persona"
+      }
+    ],
+    "recommended_investors": [
+      {
+        "name": "Sarah Guo",
+        "fund": "Conviction",
+        "thesis_match": "Actively investing in AI developer tools",
+        "contact_url": "https://conviction.com/contact"
+      }
+    ],
+    "tweet_draft": "Just analyzed an AI DevOps startup. Strong tech moat, $50B TAM, but enterprise sales cycle is the make-or-break. Conditional pass with 6.6/10 scorecard. Key condition: close 3 design partners in 90 days.",
+    "tweet_pending_approval": true
+  }
+}

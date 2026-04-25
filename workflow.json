@@ -1,0 +1,23 @@
+{
+  "name": "FounderOS — Automated Startup Due Diligence Engine",
+  "description": "Multi-agent system that performs layered due diligence on startup ideas with dual red team consensus analysis",
+  "nodes": [
+    {"id": "input_node", "type": "Input", "label": "Startup Idea", "nodeCategory": "input"},
+    {"id": "manager_agent", "type": "Agent", "label": "Deal Memo Writer", "nodeCategory": "agent", "agent_id": "69ec553f25ead3c1187be93a"},
+    {"id": "product_analyst", "type": "Agent", "label": "Product Analyst", "nodeCategory": "agent", "agent_id": "69ec551d683f81d0be89f2c4"},
+    {"id": "market_intelligence", "type": "Agent", "label": "Market Intelligence", "nodeCategory": "agent", "agent_id": "69ec55046433c243c172359e"},
+    {"id": "unit_economics", "type": "Agent", "label": "Unit Economics Modeler", "nodeCategory": "agent", "agent_id": "69ec5505eac603bbd2d82ea7"},
+    {"id": "red_team_alpha", "type": "Agent", "label": "Red Team Alpha", "nodeCategory": "agent", "agent_id": "69ec5505950816878e84f135"},
+    {"id": "red_team_beta", "type": "Agent", "label": "Red Team Beta", "nodeCategory": "agent", "agent_id": "69ec55056433c243c17235a0"},
+    {"id": "output_node", "type": "Output", "label": "Deal Memo Output", "nodeCategory": "end"}
+  ],
+  "edges": [
+    {"source": "input_node", "target": "manager_agent"},
+    {"source": "manager_agent", "target": "product_analyst"},
+    {"source": "manager_agent", "target": "market_intelligence"},
+    {"source": "manager_agent", "target": "unit_economics"},
+    {"source": "manager_agent", "target": "red_team_alpha"},
+    {"source": "manager_agent", "target": "red_team_beta"},
+    {"source": "manager_agent", "target": "output_node"}
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "agent_name": "Unit Economics Modeler",
+  "agent_id": "69ec5ab8faf2562dd1132c02",
+  "description": "Financial Stress Tester that calculates unit economics, identifies fatal financial assumptions, and runs three-scenario stress tests",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "revenue_model": "string",
+    "estimated_cac": "string",
+    "estimated_ltv": "string",
+    "ltv_cac_ratio": "string",
+    "monthly_burn_estimate": "string",
+    "customers_for_10k_mrr": "string",
+    "fatal_financial_assumption": "string",
+    "capital_verdict": "string",
+    "scenario_analysis": {
+      "base_case": {
+        "monthly_burn": "string",
+        "months_to_10k_mrr": "number",
+        "capital_required": "string"
+      },
+      "bear_case": {
+        "monthly_burn": "string",
+        "months_to_10k_mrr": "number",
+        "capital_required": "string"
+      },
+      "bull_case": {
+        "monthly_burn": "string",
+        "months_to_10k_mrr": "number",
+        "capital_required": "string"
+      }
+    }
+  },
+  "example_response": {
+    "revenue_model": "SaaS subscription with usage-based pricing",
+    "estimated_cac": "$350 blended across channels",
+    "estimated_ltv": "$2,100 based on 18-month avg lifetime",
+    "ltv_cac_ratio": "6:1 — healthy but assumes low churn",
+    "monthly_burn_estimate": "$45K for a team of 3",
+    "customers_for_10k_mrr": "200 customers at $50/mo average",
+    "fatal_financial_assumption": "Assumes 5% monthly churn when industry average is 8%",
+    "capital_verdict": "Capital-efficient if organic channels work, capital-intensive if paid acquisition required",
+    "scenario_analysis": {
+      "base_case": {
+        "monthly_burn": "$45K",
+        "months_to_10k_mrr": 14,
+        "capital_required": "$630K"
+      },
+      "bear_case": {
+        "monthly_burn": "$55K",
+        "months_to_10k_mrr": 24,
+        "capital_required": "$1.32M"
+      },
+      "bull_case": {
+        "monthly_burn": "$40K",
+        "months_to_10k_mrr": 8,
+        "capital_required": "$320K"
+      }
+    }
+  }
+}

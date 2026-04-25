@@ -1,0 +1,70 @@
+{
+  "app_name": "FounderOS",
+  "created_at": "2026-04-25",
+  "workflow_type": "manager-subagent",
+  "agents": {
+    "deal_memo_writer": {
+      "agent_id": "69ec5aef603f5bad913c0db7",
+      "name": "Deal Memo Writer",
+      "role": "manager",
+      "provider": "openai",
+      "model": "openai/gpt-4.1",
+      "has_knowledge_base": true,
+      "managed_agents": [
+        "69ec5ad130bbb2ccb9d9492f",
+        "69ec5ad2d03f1b66a206d273",
+        "69ec5ab8faf2562dd1132c02",
+        "69ec5ab863c949174ac79996",
+        "69ec5ab8d03f1b66a206d26a"
+      ],
+      "tools": ["GMAIL_SEND_EMAIL", "HUBSPOT_CREATE_DEAL", "GOOGLECALENDAR_CREATE_EVENT", "TWITTER_CREATION_OF_A_POST"]
+    },
+    "product_analyst": {
+      "agent_id": "69ec5ad130bbb2ccb9d9492f",
+      "name": "Product Analyst",
+      "role": "sub-agent",
+      "provider": "openai",
+      "model": "openai/gpt-4.1",
+      "tools": ["GITHUB_SEARCH_REPOSITORIES"]
+    },
+    "market_intelligence": {
+      "agent_id": "69ec5ad2d03f1b66a206d273",
+      "name": "Market Intelligence",
+      "role": "sub-agent",
+      "provider": "perplexity",
+      "model": "perplexity/sonar-pro",
+      "tools": []
+    },
+    "unit_economics_modeler": {
+      "agent_id": "69ec5ab8faf2562dd1132c02",
+      "name": "Unit Economics Modeler",
+      "role": "sub-agent",
+      "provider": "openai",
+      "model": "openai/gpt-4.1",
+      "tools": []
+    },
+    "red_team_alpha": {
+      "agent_id": "69ec5ab863c949174ac79996",
+      "name": "Red Team Alpha",
+      "role": "sub-agent",
+      "provider": "openai",
+      "model": "openai/gpt-4.1",
+      "tools": []
+    },
+    "red_team_beta": {
+      "agent_id": "69ec5ab8d03f1b66a206d26a",
+      "name": "Red Team Beta",
+      "role": "sub-agent",
+      "provider": "openai",
+      "model": "openai/gpt-4.1",
+      "tools": []
+    }
+  },
+  "knowledge_bases": {
+    "founderos_vc_frameworks": {
+      "rag_id": "69ec5a83e01f11b1c838377d",
+      "rag_name": "founderosvcframeworksclmo",
+      "linked_agent": "69ec5aef603f5bad913c0db7"
+    }
+  }
+}

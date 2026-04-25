@@ -1,0 +1,82 @@
+{
+  "agent_name": "Market Intelligence",
+  "agent_id": "69ec5ad2d03f1b66a206d273",
+  "description": "Go-To-Market Strategist that searches the web for competitive intelligence, market data, competitor deep dives, and investor matching",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "real_competitors": [
+      {
+        "name": "string",
+        "pricing": "string",
+        "funding": "string",
+        "weakness": "string"
+      }
+    ],
+    "competitor_deep_dive": [
+      {
+        "name": "string",
+        "founded": "number",
+        "total_funding": "string",
+        "pricing": "string",
+        "biggest_weakness": "string",
+        "strongest_strength": "string"
+      }
+    ],
+    "market_gap": "string",
+    "ideal_customer_profile": "string",
+    "tam_estimate_and_reasoning": "string",
+    "distribution_channel": "string",
+    "price_point": "string",
+    "hackernews_sentiment": "string",
+    "twitter_thread": [
+      "string"
+    ],
+    "recommended_investors": [
+      {
+        "name": "string",
+        "fund": "string",
+        "thesis_match": "string",
+        "contact_url": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "real_competitors": [
+      {
+        "name": "Competitor A",
+        "pricing": "$49/mo starter plan",
+        "funding": "$25M Series B",
+        "weakness": "No API access on lower tiers"
+      }
+    ],
+    "competitor_deep_dive": [
+      {
+        "name": "Competitor A",
+        "founded": 2019,
+        "total_funding": "$35M across 3 rounds",
+        "pricing": "$49/mo starter, $199/mo pro, custom enterprise",
+        "biggest_weakness": "Clunky UX and no API access below enterprise tier",
+        "strongest_strength": "First-mover advantage with 10K+ paying customers"
+      }
+    ],
+    "market_gap": "No solution serves mid-market companies with self-serve onboarding",
+    "ideal_customer_profile": "Series A-C SaaS companies with 50-200 employees",
+    "tam_estimate_and_reasoning": "$12B based on 500K target companies at $24K ACV",
+    "distribution_channel": "Developer community and content marketing",
+    "price_point": "$29/mo for starter tier",
+    "hackernews_sentiment": "Generally positive, frustration with existing tools",
+    "twitter_thread": [
+      "Thread about the market opportunity"
+    ],
+    "recommended_investors": [
+      {
+        "name": "Jane Smith",
+        "fund": "Acme Ventures",
+        "thesis_match": "Invests in developer tools",
+        "contact_url": "https://acmeventures.com/contact"
+      }
+    ]
+  }
+}

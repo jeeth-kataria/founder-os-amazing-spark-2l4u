@@ -1,0 +1,54 @@
+{
+  "agent_name": "Product Analyst",
+  "agent_id": "69ec5ad130bbb2ccb9d9492f",
+  "description": "Technical Moat Assessor that searches GitHub for open-source alternatives and assesses technical feasibility",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "github_repositories_found": [
+      {
+        "name": "string",
+        "url": "string",
+        "stars": "string",
+        "relevance": "string"
+      }
+    ],
+    "technical_moat_assessment": "string",
+    "mvp_product_name": "string",
+    "core_hypothesis": "string",
+    "features": [
+      "string"
+    ],
+    "what_to_cut": [
+      "string"
+    ],
+    "tech_stack": [
+      "string"
+    ],
+    "timeline_weeks": "string"
+  },
+  "example_response": {
+    "github_repositories_found": [
+      {
+        "name": "sample string",
+        "url": "sample string",
+        "stars": "sample string",
+        "relevance": "sample string"
+      }
+    ],
+    "technical_moat_assessment": "sample string",
+    "mvp_product_name": "sample string",
+    "core_hypothesis": "sample string",
+    "features": [
+      "sample string"
+    ],
+    "what_to_cut": [
+      "sample string"
+    ],
+    "tech_stack": [
+      "sample string"
+    ],
+    "timeline_weeks": "sample string"
+  }
+}

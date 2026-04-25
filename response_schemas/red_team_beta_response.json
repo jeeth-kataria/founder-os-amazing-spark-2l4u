@@ -1,0 +1,61 @@
+{
+  "agent_name": "Red Team Beta",
+  "agent_id": "69ec5ab8d03f1b66a206d26a",
+  "description": "Adversarial Analyst with Operational Focus that attacks the idea from operational and cognitive bias angles with ranked kill shots",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "kill_shots_ranked": [
+      {
+        "rank": "number",
+        "cause": "string",
+        "estimated_timeline": "string"
+      }
+    ],
+    "product_challenges": [
+      "string"
+    ],
+    "market_challenges": [
+      "string"
+    ],
+    "economics_challenges": [
+      "string"
+    ],
+    "competitive_death_scenario": "string",
+    "founder_trap": "string"
+  },
+  "example_response": {
+    "kill_shots_ranked": [
+      {
+        "rank": 1,
+        "cause": "Premature scaling before achieving product-market fit",
+        "estimated_timeline": "Month 10"
+      },
+      {
+        "rank": 2,
+        "cause": "Founder burnout from trying to serve too many customer segments",
+        "estimated_timeline": "Month 14"
+      },
+      {
+        "rank": 3,
+        "cause": "Technical debt accumulation from rushing enterprise features",
+        "estimated_timeline": "Month 16"
+      }
+    ],
+    "product_challenges": [
+      "Hiring senior engineers in competitive market",
+      "Shipping velocity drops as codebase grows"
+    ],
+    "market_challenges": [
+      "Customer discovery confirmation bias leading to wrong ICP",
+      "Slow adoption due to change management friction"
+    ],
+    "economics_challenges": [
+      "Cash flow gap between customer acquisition and first payment",
+      "Support costs scale linearly with customer count"
+    ],
+    "competitive_death_scenario": "Team burns out trying to match feature parity with well-funded competitor",
+    "founder_trap": "Sunk cost fallacy — continuing to invest in a channel that showed early promise but has plateaued"
+  }
+}
